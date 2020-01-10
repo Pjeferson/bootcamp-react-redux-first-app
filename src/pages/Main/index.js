@@ -8,16 +8,89 @@ export default function Main() {
   return (
     <ProductList>
       <li>
-        <img src="" alt="" />
-      </li>
-      <strong>Descrição</strong>
-      <span>Preço</span>
-      <button type="button">
-        <div>
-          <MdAddShoppingCart size={16} color="#fff" />3
+        <img
+          src="https://cdn.shopify.com/s/files/1/0248/4282/9906/products/4j_2048x.jpg?v=1563085766"
+          alt="Tênis"
+        />
+        <strong>Descrição</strong>
+        <span>Preço</span>
+        <button type="button">
+          <div>
+            <MdAddShoppingCart size={16} color="#fff" />3
+          </div>
           <span>ADICIONAR AO CARRINHO</span>
-        </div>
-      </button>
+        </button>
+      </li>
+      <li>
+        <img
+          src="https://cdn.shopify.com/s/files/1/0248/4282/9906/products/4j_2048x.jpg?v=1563085766"
+          alt="Tênis"
+        />
+        <strong>Descrição</strong>
+        <span>Preço</span>
+        <button type="button">
+          <div>
+            <MdAddShoppingCart size={16} color="#fff" />3
+          </div>
+          <span>ADICIONAR AO CARRINHO</span>
+        </button>
+      </li>
+      <li>
+        <img
+          src="https://cdn.shopify.com/s/files/1/0248/4282/9906/products/4j_2048x.jpg?v=1563085766"
+          alt="Tênis"
+        />
+        <strong>Descrição</strong>
+        <span>Preço</span>
+        <button type="button">
+          <div>
+            <MdAddShoppingCart size={16} color="#fff" />3
+          </div>
+          <span>ADICIONAR AO CARRINHO</span>
+        </button>
+      </li>
+      <li>
+        <img
+          src="https://cdn.shopify.com/s/files/1/0248/4282/9906/products/4j_2048x.jpg?v=1563085766"
+          alt="Tênis"
+        />
+        <strong>Descrição</strong>
+        <span>Preço</span>
+        <button type="button">
+          <div>
+            <MdAddShoppingCart size={16} color="#fff" />3
+          </div>
+          <span>ADICIONAR AO CARRINHO</span>
+        </button>
+      </li>
+      <li>
+        <img
+          src="https://cdn.shopify.com/s/files/1/0248/4282/9906/products/4j_2048x.jpg?v=1563085766"
+          alt="Tênis"
+        />
+        <strong>Descrição</strong>
+        <span>Preço</span>
+        <button type="button">
+          <div>
+            <MdAddShoppingCart size={16} color="#fff" />3
+          </div>
+          <span>ADICIONAR AO CARRINHO</span>
+        </button>
+      </li>
+      <li>
+        <img
+          src="https://cdn.shopify.com/s/files/1/0248/4282/9906/products/4j_2048x.jpg?v=1563085766"
+          alt="Tênis"
+        />
+        <strong>Descrição</strong>
+        <span>Preço</span>
+        <button type="button">
+          <div>
+            <MdAddShoppingCart size={16} color="#fff" />3
+          </div>
+          <span>ADICIONAR AO CARRINHO</span>
+        </button>
+      </li>
     </ProductList>
   );
 }
