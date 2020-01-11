@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 import { MdAddShoppingCart } from 'react-icons/md';
 import { connect } from 'react-redux';
 
@@ -61,5 +62,9 @@ class Main extends Component {
     );
   }
 }
+
+Main.propTypes = {
+  dispatch: PropTypes.func.isRequired,
+};
 
 export default connect()(Main);
