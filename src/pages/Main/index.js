@@ -20,7 +20,7 @@ class Main extends Component {
 
     const data = response.data.map(product => ({
       ...product,
-      price: formatPrice(product.price),
+      priceFormatted: formatPrice(product.price),
     }));
 
     this.setState({
@@ -46,7 +46,7 @@ class Main extends Component {
           <li key={product.id}>
             <img src={product.image} alt="Tênis" />
             <strong>{product.title}</strong>
-            <span>{product.price}</span>
+            <span>{product.priceFormatted}</span>
             <button
               type="button"
               onClick={() => this.handleAddProduct(product)}
