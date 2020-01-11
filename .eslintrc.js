@@ -21,6 +21,7 @@ module.exports = {
     'prettier/prettier': 'error',
     'react/jsx-filename-extension': ['warn', { extensions: ['.jsx', '.js'] }],
     'import/prefer-default-export': 'off', //to don't warn on styled components "const" importations
+    'no-param-reassign': 'off',
     'no-console': ['error', { allow: ['tron'] }],
   },
 };
