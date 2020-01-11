@@ -29,17 +29,21 @@ export default function Cart() {
               />
             </td>
             <td>
-              <strong>Tênis muito massa</strong>
-              <span>R$129,90</span>
+              <div className="infos">
+                <strong>Tênis muito massa</strong>
+                <span>R$129,90</span>
+              </div>
             </td>
             <td>
-              <button type="button">
-                <MdRemoveCircleOutline size={20} color="#7159c1" />
-              </button>
-              <input type="number" readOnly value={2} />
-              <button type="button">
-                <MdAddCircleOutline size={20} color="7159c1" />
-              </button>
+              <div className="control-price">
+                <button type="button">
+                  <MdRemoveCircleOutline size={20} color="#7159c1" />
+                </button>
+                <input type="number" readOnly value={2} />
+                <button type="button">
+                  <MdAddCircleOutline size={20} color="#7159c1" />
+                </button>
+              </div>
             </td>
             <td>
               <strong>R$258,80</strong>
