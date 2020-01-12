@@ -10,9 +10,20 @@ function* addToCart({ id }) {
     state.cart.find(p => p.id === id)
   );
 
+  const stock = yield call(api.get, `/stock/${id}`);
+
+  const { amount: stockAmount } = stock.data;
+  const currentAmount = productExistis ? productExistis.amount : 0;
+
+  const amount = currentAmount + 1;
+
+  if (amount > stockAmount) {
+    console.tron.warn('ERRO');
+    return;
+  }
+
   if (productExistis) {
-    const { amount } = productExistis;
-    yield put(updateAmount(id, amount + 1));
+    yield put(updateAmount(id, amount));
   } else {
     const response = yield call(api.get, `/products/${id}`);
 
