@@ -12,13 +12,13 @@ import { Container, ProductTable, Total } from './styles';
 import { formatPrice } from '../../util/format';
 import * as CartActions from '../../store/modules/cart/actions';
 
-function Cart({ cart, removeFromCart, updateAmount, totalFormatted }) {
+function Cart({ cart, removeFromCart, updateAmountRequest, totalFormatted }) {
   function increment(product) {
-    updateAmount(product.id, product.amount + 1);
+    updateAmountRequest(product.id, product.amount + 1);
   }
 
   function decrement(product) {
-    updateAmount(product.id, product.amount - 1);
+    updateAmountRequest(product.id, product.amount - 1);
   }
 
   return (
@@ -95,7 +95,7 @@ function Cart({ cart, removeFromCart, updateAmount, totalFormatted }) {
 Cart.propTypes = {
   cart: PropTypes.array.isRequired,
   removeFromCart: PropTypes.func.isRequired,
-  updateAmount: PropTypes.func.isRequired,
+  updateAmountRequest: PropTypes.func.isRequired,
   totalFormatted: PropTypes.string.isRequired,
 };
 
