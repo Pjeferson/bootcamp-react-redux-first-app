@@ -18,6 +18,18 @@ export default function cart(state = [], action) {
       });
     case '@cart/REMOVE':
       return produce(state, draft => draft.filter(p => p.id !== action.id));
+    case '@cart/UPDATE_AMOUNT':
+      return produce(state, draft => {
+        const { id, amount } = action;
+
+        if (amount > 0) {
+          const productIndex = draft.findIndex(p => p.id === id);
+
+          if (productIndex >= 0) {
+            draft[productIndex].amount = amount;
+          }
+        }
+      });
     default:
       return state;
   }
